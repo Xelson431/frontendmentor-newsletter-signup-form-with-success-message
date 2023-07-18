@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    
+
+    background-color: #36384E;
+    color: black;
+
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+@media only screen 
+   and (max-width : 375px) {
+    .card{
+
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap:0 ;
+        background-color: white;
+        margin: 0;
+    }
+
+    .illustration{
+    
+        margin: 0px;
+        width: auto;
+        margin: 0px -20px;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    
+    }
+    
+    #emailInput{
+        padding: 20px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        text-indent: 0.5rem;
+    }
+    
+    #emailInput:invalid:not(:placeholder-shown) {
+        border: 2px solid red;
+      }
+    
+    #emailInput:focus {
+        
+        outline: none;
+      }
+      
+      
+    .text{
+        padding:  25px;
+
+    }
+}
+
+@media only screen 
+   and (min-width : 1440px) {
+.card{
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    column-gap: 20px;
+    background-color: white;
+    border-radius: 25px;
+    padding:  25px;
+
+}
+.illustration{
+    width: auto;
+    /* padding:  25px; */
+}
+
+
+.text{
+    padding:  25px;
+
+}
+
+.text h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.text p{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+#emailInput{
+    padding: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-indent: 0.5rem;
+}
+
+#emailInput:invalid:not(:placeholder-shown) {
+    border: 2px solid red;
+  }
+
+#emailInput:focus {
+    
+    outline: none;
+  }
+  
+
+}.btn{
+    padding: 10px;
+    color: white;
+    background-color: #36384E;
+    border: solid 1px #36384E;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.btn:hover{
+    color: white;
+   
+}
